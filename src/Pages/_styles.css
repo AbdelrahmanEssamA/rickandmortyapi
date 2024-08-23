@@ -3,93 +3,103 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
+
 .charactersContainer {
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: 2.188rem; /* 35px */
   flex-wrap: wrap;
-  margin-top: 40px;
+  padding: 3.75rem; /* 60px */
 }
 
-.charactersPage {
-  padding: 20px;
-  margin-top: 30px;
-  .searchBar {
-    display: flex;
-    justify-content: center;
-    input {
-      width: 40%;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 50px;
-      border: 5px solid #2f9331;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-  }
+.darkContainer {
+  background-color: #000;
+  color: white;
+}
+
+.searchBar {
+  padding-top: 3.75rem; /* 60px */
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar input {
+  width: 40%;
+  padding: 0.938rem 1.563rem; /* 15px 25px */
+  font-size: 1.125rem; /* 18px */
+  border-radius: 50px;
+  border: 6px solid #2f9331;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .characterDetails {
-  padding: 20px;
-  h1 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    margin-left: 5px;
-    color: #2f9331;
-  }
-  img {
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 12px solid #dbdbdb;
-  }
+  padding: 1.25rem; /* 20px */
+}
+
+.characterDetails h1 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  margin-bottom: 1.875rem; /* 30px */
+  margin-left: 0.313rem; /* 5px */
+  color: #2f9331;
+}
+
+.characterDetails img {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 12px solid #dbdbdb;
 }
 
 .flexContainer {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem; /* 20px */
 }
 
 .status {
   font-weight: 600;
-  font-size: 20px;
-  .Alive {
-    color: green;
-  }
-  .Dead {
-    color: red;
-  }
+  font-size: 1.25rem; /* 20px */
+}
+
+.status .Alive {
+  color: green;
+}
+
+.status .Dead {
+  color: red;
 }
 
 .info {
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: 500;
-  margin-top: 4px;
-  margin-left: 5px;
+  margin-top: 0.25rem; /* 4px */
+  margin-left: 0.313rem; /* 5px */
 }
 
 .pagination {
   display: flex;
-  padding: 0px 100px;
+  padding: 0 5rem 2.5rem; /* 0 150px 40px */
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  button {
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    border: none;
-    background-color: #2f9331;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  margin-top: 2.5rem; /* 40px */
 }
+
+.pagination button {
+  padding: 0.938rem 1.563rem; /* 15px 25px */
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f9331;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .notFound {
   display: flex;
   justify-content: center;
   align-items: center;
   color: red;
   height: 50vh;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
 }

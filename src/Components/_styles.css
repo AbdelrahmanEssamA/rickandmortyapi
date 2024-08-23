@@ -1,46 +1,42 @@
-.characterCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #e5e5e5;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.2s;
-  img {
-    width: 250px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-}
-
+/* Common styles for character cards */
+.characterCard,
 .darkCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #333;
-  color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s;
-  img {
-    width: 250px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
 }
 
-.characterCard:hover {
+.characterCard img,
+.darkCard img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Light mode character card */
+.characterCard {
+  background-color: #e5e5e5;
+}
+
+/* Dark mode character card */
+.darkCard {
+  background-color: #333;
+  color: white;
+}
+
+.characterCard:hover,
+.darkCard:hover {
   transform: scale(0.95);
 }
 
+/* Navbar styles */
 .navbar {
   width: 100%;
   background-color: #333;
@@ -54,23 +50,43 @@
   z-index: 1000;
 }
 
+/* Logo styles */
 .logo {
   margin-left: 20px;
   font-size: 24px;
 }
 
+/* Navigation links styles */
 .nav-links {
   list-style-type: none;
   display: flex;
+  align-items: center;
   margin-right: 20px;
+  gap: 10px;
 }
 
+.nav-links button {
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+}
+
+.nav-links button:hover {
+  background-color: #2f9331;
+  color: white;
+}
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  transition: all 0.2s;
+  transition: color 0.2s, text-decoration 0.2s;
 }
+
 .nav-links a:hover {
   color: #f1c40f;
   text-decoration: underline;
