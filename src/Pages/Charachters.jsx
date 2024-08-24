@@ -40,6 +40,7 @@ const Characters = () => {
   };
 
   const goToPreviousPage = () => {
+    if (currentPage === 1) return;
     setCurrentPage(currentPage - 1);
   };
 
